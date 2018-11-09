@@ -157,8 +157,8 @@ int main(int argc, char * argv[]){
        block.y = blocks[index].GetY();
        block.width = blocks[index].GetWidth();
        block.height = blocks[index].GetHeight();
-       packet << block;
-       socket.send(&packet, sizeof(packet), ip, port); 
+       // packet << block;
+       socket.send(&block, sizeof(block), ip, port); 
     }
     i++;
   }
