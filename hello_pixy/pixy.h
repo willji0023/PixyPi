@@ -76,10 +76,10 @@ extern "C"
     }
    double GetWidth(){
 	  return width;
-   }
-  double GetHeight(){
+    }
+double GetHeight(){
 	 return height;
-  } 
+ 	 } 
     uint16_t type;
     uint16_t signature;
     uint16_t x;

@@ -10,7 +10,7 @@
 // cmucam@cs.cmu.edu. Such licensing terms are available for
 // all portions of the Pixy codebase presented here.
 //
-// end license header
+// end  license header
 //
 
 #ifndef __PIXYDEFS_H__
@@ -85,7 +85,7 @@
 #else
 #define END 0
 #endif
-#endif
+#endif 
 #define END_OUT_ARGS END
 #define END_IN_ARGS END
 
