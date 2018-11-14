@@ -70,7 +70,7 @@ int main(int argc, char * argv[]){
     printf("pixy_init(): ");
     pixy_error(pixy_init_status);
 
-    return pixy_init_status;
+    // return pixy_init_status;
   }
 
   // Request Pixy firmware version //
@@ -87,7 +87,7 @@ int main(int argc, char * argv[]){
       printf("Failed to retrieve Pixy firmware version. ");
       pixy_error(return_value);
 
-      return return_value;
+      //return return_value;
     } else {
       // Success //
       printf(" Pixy Firmware Version: %d.%d.%d\n", major, minor, build);
@@ -157,8 +157,7 @@ int main(int argc, char * argv[]){
        block.y = blocks[index].GetY();
        block.width = blocks[index].GetWidth();
        block.height = blocks[index].GetHeight();
-       // packet << block;
-       socket.send(&block, sizeof(block), ip, port); 
+       socket.send(&block, sizeof(Data), ip, port); 
     }
     i++;
   }
